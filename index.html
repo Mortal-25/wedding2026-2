@@ -1,13 +1,211 @@
 <!DOCTYPE html>
 <html lang="uk">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Дар'я & Антон</title>
+
+<title>Дарʼя & Антон</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
 <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-<h1>Дар'я & Антон</h1>
+
+<div class="book">
+
+<!-- 1 -->
+
+<section class="page active">
+
+<img src="assets/cover.jpg" alt="">
+
+<div class="nav">
+<button class="next">Відкрити</button>
+</div>
+
+</section>
+
+<!-- 2 -->
+
+<section class="page">
+
+<img src="assets/invitation.jpg" alt="">
+
+<div class="nav">
+<button class="prev">←</button>
+<button class="next">→</button>
+</div>
+
+</section>
+
+<!-- 3 -->
+
+<section class="page">
+
+<img src="assets/photo.jpg" alt="">
+
+<div class="nav">
+<button class="prev">←</button>
+<button class="next">→</button>
+</div>
+
+</section>
+
+<!-- 4 -->
+
+<section class="page">
+
+<img src="assets/timeline.jpg" alt="">
+
+<div class="nav">
+<button class="prev">←</button>
+<button class="next">→</button>
+</div>
+
+</section>
+
+<!-- 5 -->
+
+<section class="page">
+
+<img src="assets/flowers.jpg" alt="">
+
+<div class="nav">
+<button class="prev">←</button>
+<button class="next">→</button>
+</div>
+
+</section>
+
+<!-- 6 -->
+
+<section class="page">
+
+<img src="assets/location.jpg" alt="">
+
+<a
+class="map-btn"
+href="https://maps.app.goo.gl/hRD5bD2sVxHp65u67?g_st=ic"
+target="_blank"
+>
+Відкрити карту
+</a>
+
+<div class="nav">
+<button class="prev">←</button>
+<button class="next">→</button>
+</div>
+
+</section>
+
+<!-- 7 RSVP -->
+
+<section class="page">
+
+<div class="rsvp">
+
+<h2>Підтвердити присутність</h2>
+
+<form
+action="https://formsubmit.co/Darikozhurina@gmail.com"
+method="POST"
+>
+
+<input
+type="text"
+name="Ім'я"
+placeholder="Ваше ім'я"
+required
+>
+
+<select
+name="Присутність"
+required
+>
+
+<option value="">
+Оберіть
+</option>
+
+<option>
+Так, із задоволенням
+</option>
+
+<option>
+На жаль, не зможу
+</option>
+
+</select>
+
+<select
+name="Алкоголь"
+>
+
+<option>
+Вино
+</option>
+
+<option>
+Шампанське
+</option>
+
+<option>
+Віскі
+</option>
+
+<option>
+Коньяк
+</option>
+
+<option>
+Без алкоголю
+</option>
+
+</select>
+
+<input
+type="hidden"
+name="_captcha"
+value="false"
+>
+
+<button type="submit">
+Надіслати
+</button>
+
+</form>
+
+</div>
+
+<div class="nav">
+<button class="prev">←</button>
+<button class="next">→</button>
+</div>
+
+</section>
+
+<!-- 8 -->
+
+<section class="page">
+
+<img src="assets/thanks.jpg" alt="">
+
+<div id="countdown"></div>
+
+</section>
+
+</div>
+
+<audio autoplay loop>
+<source src="assets/music.mp3" type="audio/mpeg">
+</audio>
+
 <script src="script.js"></script>
+
 </body>
 </html>
